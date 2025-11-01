@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>League of Legends Skill Chart</title>
+  <meta name="description" content="Rate your performance per Lane and Class."/>
+  <meta name="theme-color" content="#0b1020"/>
+  <meta property="og:title" content="League of Legends Skill Chart"/>
+  <meta property="og:description" content="Rate your performance per Lane and Class."/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23d4af37' d='M32 6l8 12 14 2-10 10 2 14-14-7-14 7 2-14L10 20l14-2z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="wallpaper"></div>
+
+  <header class="site-header">
+    <h1>League of Legends Skill Chart</h1>
+    <p>Choose your rank per <strong>Lane</strong> and <strong>Class</strong>.</p>
+    <br/><br/>
+    <div class="namebar">
+      <label class="field">
+        <span>Optional: Display name (e.g., Riot ID)</span>
+        <input id="nameInput" type="text" placeholder="e.g., Star Guardian Ez#real or timfernix"/>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel picker wide">
+      <div class="two-col">
+        <div>
+          <h2>Lanes</h2>
+          <div id="lanesGrid" class="roles-grid"></div>
+        </div>
+        <div>
+          <h2>Classes</h2>
+          <div id="classesGrid" class="roles-grid"></div>
+        </div>
+      </div>
+
+      <br/><br/>
+      <div class="actions at-preview">
+        <div class="spacer"></div>
+        <button id="randomizeBtn" class="btn ghost">Randomize</button>
+        <button id="resetBtn" class="btn ghost">Reset</button>
+        <button id="copyBtn" class="btn">Copy to clipboard</button>
+        <button id="exportBtn" class="btn primary">Export PNG</button>
+      </div>
+    </section>
+
+    <!-- hidden canvas for export -->
+    <canvas id="exportCanvas" width="1920" height="1080" hidden></canvas>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="legal">
+        Made with <span aria-hidden="true">❤️‍🔥</span> by
+        <a href="https://timfernix.github.io/" target="_blank" rel="noopener">timfernix</a>.
+        League of Legends Skill Chart uses assets under Riot Games’ “Legal Jibber Jabber”.
+        Riot Games does not endorse or sponsor this project.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"872aa0053fb94ba7bf52129ad5b003ea"}'></script>
+</body>
+</html>
