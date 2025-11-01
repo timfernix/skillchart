@@ -1,4 +1,4 @@
-# League of Legends Skill Chart — User Guide
+# League of Legends Skill Chart - User Guide
 
 Make a shareable image that shows how you rate yourself **by lane** and **by class** in League.
 
@@ -36,14 +36,14 @@ Make a shareable image that shows how you rate yourself **by lane** and **by cla
 ## Tips for Best Results
 
 * Keep your browser at **100% zoom** before exporting for consistent rendering.
-* Very long display names may wrap—shorter looks cleaner.
+* Very long display names may wrap...shorter looks cleaner.
 
 ---
 
 ## FAQ
 
 **Does the site store my name or ranks?**
-No—everything is rendered client-side.
+No, everything is rendered client-side.
 
 **Can I change the background?**
 The exported image uses a fixed wallpaper to keep the style consistent.
