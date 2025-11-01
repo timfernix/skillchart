@@ -22,7 +22,7 @@ const CONTENT_W_RATIO    = 0.86;   // portion of the card width (both combined)
 const LANES = [
   { key:"top",     name:"Toplane" },
   { key:"jungle",  name:"Jungle" },
-  { key:"Middle",  name:"Midlane" },
+  { key:"middle",  name:"Midlane" },
   { key:"bottom",  name:"Botlane" },
   { key:"support", name:"Support" },
   { key:"every",   name:"Fill/All" },
@@ -68,10 +68,11 @@ function buildClassTipHTML(key, name){
 
 const RANKS = ["iron","bronze","silver","gold","platinum","emerald","diamond","master","grandmaster","challenger"];
 const SRC = {
-  rank: (k)=>`assets/ranks/${k}.png`,
-  lane: (k)=>`assets/lanes/${k}.png`,
-  cls:  (k)=>`assets/classes/${k}.png`,
+  rank: (k)=>`assets/ranks/${String(k).toLowerCase()}.png`,
+  lane: (k)=>`assets/lanes/${String(k).toLowerCase()}.png`,
+  cls:  (k)=>`assets/classes/${String(k).toLowerCase()}.png`,
 };
+
 
 const els = {
   lanesGrid: document.getElementById("lanesGrid"),
